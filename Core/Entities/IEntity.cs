@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleUI
+namespace Core.Entities
 {
-    internal class Program
+    // IEntity implement eden class bir veritabanı tablosudur.
+    public interface IEntity
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
