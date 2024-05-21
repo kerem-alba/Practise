@@ -12,7 +12,8 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=KEREM;Database=Northwind;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer("Server=KEREM;Database=Northwind;User Id=sa;Password=sa1234;TrustServerCertificate=True;");
+
         }
 
         public DbSet<Product> Products { get; set; }
